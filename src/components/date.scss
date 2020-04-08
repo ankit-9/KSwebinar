@@ -1,0 +1,27 @@
+.date {
+  display: flex;
+  align-items: center;
+
+  &-two-digit {
+    margin: rem(0 16px 0 0);
+    font-size: rem(32px);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &-year {
+    margin: 0;
+    font-size: rem(14px);
+    font-family: $font-secondary;
+    line-height: 1.5;
+    color: $c-semi-black;
+  }
+  
+  &-time {
+    margin: 0;
+    font-size: rem(14px);
+    font-family: $font-secondary;
+    line-height: 1.5;
+    color: $c-gray;
+  }
+}

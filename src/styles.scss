@@ -1,0 +1,89 @@
+@import "./config/font.scss";
+@import "./config/color.scss";
+@import "./mixin/rem.scss";
+@import "./mixin/breakpoint.scss";
+@import "./mixin/grid.scss";
+@import "./basic/base.scss";
+@import "./basic/util.scss";
+.ks-tile {
+  &__items {
+    display: flex;
+    overflow-x: scrolldate;
+    padding: rem(2px 2px 20px);
+
+    &::-webkit-scrollbar-track {
+      border-radius: rem(10px);
+      background-color: $c-white;
+    }
+    &::-webkit-scrollbar {
+      height: rem(16px);
+      border-radius: rem(10px);
+	    background-color: $c-white;
+    }
+    &::-webkit-scrollbar-thumb {
+      border: 4px solid$c-white;
+      border-radius: rem(10px);
+	    background-color: rgba(33,33,33,0.15);
+    }
+  }
+  
+  &__item {
+    position: relative;
+    padding: rem(25px 16px 16px);
+    height: rem(253px);
+    min-width: rem(263px);
+    border-radius: rem(5px);
+    box-shadow: 0 0 2px .5px rgba(0, 0, 0, 0.1);
+    background-color: $c-white;
+
+    &:not(:last-child) {
+      margin-right: rem(32px);
+    }
+  }
+  &__top {
+    margin-bottom: rem(32px);
+  }
+  &__bottom {
+    position: absolute;
+    bottom: rem(16px);
+    left: rem(16px);
+  }
+}
+
+.ks-upcoming-block {
+  display: block; 
+  width: 1280px; //TODO tmp, code will remove while page theming or replace with container width
+  margin: 0 auto; 
+
+  
+  
+  &__link {
+    a {
+      display: flex;
+      align-items: center;
+      font-size: rem(12px);
+      font-weight: 600;
+      line-height: normal;
+      text-decoration: none;
+    }
+    
+    svg {
+      margin-right: rem(5px);
+      line-height: normal;
+    }
+  }
+  &__discription {
+    margin-top: rem(16px);
+    font-size: rem(16px);
+    font-family: $font-secondary;
+    line-height: 1.5;
+    color: $c-black-text;
+  }
+  &__topic-link {
+    font-size: rem(14px);
+    font-family: $font-secondary;
+    text-decoration: none;
+    line-height: 1.5;
+    color: $c-gray;
+  }
+}

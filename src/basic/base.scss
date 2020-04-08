@@ -1,0 +1,36 @@
+@import "../config/font.scss";
+@import "../config/color.scss";
+@import "../mixin/rem.scss";
+
+*,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: $font-primary;
+}
+
+body {
+  font-size: rem(16px);
+  line-height: 1.5;
+  letter-spacing: 0;
+  background-color: #E5E5E5; // TODO tmp. color
+}
+
+p {
+  margin: rem( 0 0 16px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

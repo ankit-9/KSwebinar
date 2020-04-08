@@ -1,2 +1,0 @@
-# KSwebinar
-Created with CodeSandbox

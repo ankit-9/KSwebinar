@@ -1,0 +1,80 @@
+// ==========================================================
+//  CSS Grid Mixins
+// ==========================================================
+
+//
+//  grid-column mixin 
+//
+@mixin grid-column($start: auto, $span: 1){
+  grid-column: #{$start}/#{$start + $span}; 
+  @content;
+}
+
+//
+//  grid-row mixin
+//
+@mixin grid-row($start: auto, $span: 1){
+  grid-row: #{$start}/#{$start + $span};
+  @content;
+}
+
+
+//
+//  grid-cell mixin
+//
+@mixin grid-cell($col-start: auto, $col-span: 1, $row-start: auto, $row-span: 1){
+  @include grid-column($col-start, $col-span);
+  @include grid-row($row-start, $row-span); 
+  @content;
+}
+
+
+//
+//  grid-area mixin 
+//
+@mixin grid-area($area){
+  $area: map-get($grid-areas, $area);
+  @include grid-column(nth($area, 1), nth($area, 2));
+  @include grid-row(nth($area, 3), nth($area, 4));  
+  @content;
+}
+
+//
+//  grid mixin 
+//
+
+@mixin grid($grid-map){
+    $cols: map-get($grid-map, cols);
+    $rows: map-get($grid-map, rows);    
+    $gap: map-get($grid-map, gap);    
+    $col-gap:  map-get($grid-map, col-gap);        
+    $col-gap: if($col-gap,$col-gap,$gap);
+    $row-gap:  map-get($grid-map, row-gap);
+    $row-gap: if($row-gap,$row-gap,$gap);    
+    $grid-template-columns: map-get($grid-map, grid-template-columns);
+    $grid-template-rows: map-get($grid-map, grid-template-rows); 
+
+    /*if cols or rows are numbers convert to fraction lists */
+    @if $cols and length($cols) == 1 and unitless($cols) and $grid-template-columns and length($grid-template-columns) == 1 { 
+      $cols: repeat($cols,$grid-template-columns); 
+    } 
+    @else if $cols and length($cols) == 1 and unitless($cols) {
+      $cols: repeat($cols, 1fr);
+    }
+    /*@if $cols and length($cols) == 1 and unitless($cols) { $cols: repeat($cols,1fr); }*/
+     @if $rows and length($rows) == 1 and unitless($rows) and $grid-template-rows and length($grid-template-rows) == 1 { 
+      $rows: repeat($rows, $grid-template-rows); 
+    } 
+    @else if $rows and length($rows) == 1 and unitless($rows) {
+      $rows: repeat($rows, 1fr);
+    }    
+     
+    display: grid;
+
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+
+    grid-column-gap: $col-gap;
+    grid-row-gap: $row-gap;    
+    @content;
+}
