@@ -1,0 +1,26 @@
+@import "../config/font.scss";
+@import "../mixin/rem.scss";
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    height: rem(23px);
+    font-family: $font-secondary;
+    font-size: rem(12px);
+    line-height: normal;
+    text-decoration: none;
+    border: 1px solid $c-black;
+    border-radius: rem(10px);
+    padding: rem(0 4px);
+
+    svg {
+      margin-right: rem(5px);
+      line-height: normal;
+    }
+  }
+
+  .blue-btn {
+    color: $c-blue;
+    border-color: $c-blue;
+  }
+  
