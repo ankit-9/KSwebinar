@@ -5,10 +5,18 @@
 @import "./mixin/grid.scss";
 @import "./basic/base.scss";
 @import "./basic/util.scss";
+@import "./components/button.scss";
+@import "./components/date.scss";
+@import "./components/heading.scss";
+@import "./components/icon-link.scss";
+@import "./components/link.scss";
+@import "./components/text.scss";
+
 .ks-tile {
   &__items {
     display: flex;
-    overflow-x: scrolldate;
+    flex: 0 0 100%;
+    overflow-x: scroll;
     padding: rem(2px 2px 20px);
 
     &::-webkit-scrollbar-track {
@@ -53,37 +61,10 @@
 .ks-upcoming-block {
   display: block; 
   width: 1280px; //TODO tmp, code will remove while page theming or replace with container width
+  max-width: 100%;
   margin: 0 auto; 
 
-  
-  
-  &__link {
-    a {
-      display: flex;
-      align-items: center;
-      font-size: rem(12px);
-      font-weight: 600;
-      line-height: normal;
-      text-decoration: none;
-    }
-    
-    svg {
-      margin-right: rem(5px);
-      line-height: normal;
-    }
-  }
   &__discription {
     margin-top: rem(16px);
-    font-size: rem(16px);
-    font-family: $font-secondary;
-    line-height: 1.5;
-    color: $c-black-text;
-  }
-  &__topic-link {
-    font-size: rem(14px);
-    font-family: $font-secondary;
-    text-decoration: none;
-    line-height: 1.5;
-    color: $c-gray;
   }
 }
