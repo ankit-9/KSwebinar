@@ -58,6 +58,16 @@
   }
 }
 
+
+.ks-bar-tile {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(16px);
+  background-color: $c-white;
+  box-shadow: 0 0 2px .5px rgba(0, 0, 0, 0.1);
+}
+
+// Upcoming bloc CSS
 .ks-upcoming-block {
   display: block; 
   width: 1280px; //TODO tmp, code will remove while page theming or replace with container width
@@ -67,4 +77,13 @@
   &__discription {
     margin-top: rem(16px);
   }
+}
+
+
+// Recent block CSS
+.ks-recent-block {
+  display: block; 
+  width: 1280px; //TODO tmp, code will remove while page theming or replace with container width
+  max-width: 100%;
+  margin: rem(50px auto 0);
 }
