@@ -4,17 +4,17 @@
 .icon-btn {
     display: flex;
     align-items: center;
-    height: rem(23px);
+    height: rem(25px);
     font-family: $font-secondary;
     font-size: rem(12px);
-    line-height: normal;
+    line-height: rem(25px);
     text-decoration: none;
     border: 1px solid $c-black;
-    border-radius: rem(10px);
-    padding: rem(0 4px);
+    border-radius: rem(20px);
+    padding: rem(0 10px);
 
     svg {
-      margin-right: rem(5px);
+      margin-right: rem(6px);
       line-height: normal;
     }
   }

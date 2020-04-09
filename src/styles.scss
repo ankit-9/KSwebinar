@@ -61,11 +61,25 @@
 
 .ks-bar-tile {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: rem(16px);
   background-color: $c-white;
   box-shadow: 0 0 2px .5px rgba(0, 0, 0, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: rem(8px);
+  }
+
+  @include responsive-set('above-mobile') {
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+  }
 }
 
 // Upcoming bloc CSS
@@ -88,9 +102,45 @@
   max-width: 100%;
   margin: rem(50px auto 0);
 
+  &__date {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include responsive-set('above-mobile') {
+      flex: 0 0 auto;
+    }
+
+    &-two-digit {
+      line-height: normal;
+    }
+  }
+
   &__text {
-    p:last-child {
-      margin-bottom: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @include responsive-set('tablet') {
+      max-width: rem(280px);
+    }
+
+    @include responsive-set('tablet-landscape') {
+      max-width: rem(480px);
+    }
+
+    @include responsive-set('desktop') {
+      max-width: rem(675px);
+    }
+
+    .default-text {
+      margin-bottom: rem(8px);
+
+      &:last-child {
+        @include responsive-set('above-mobile') {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
