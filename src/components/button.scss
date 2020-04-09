@@ -19,8 +19,44 @@
     }
   }
 
-  .blue-btn {
+  .btn-default {
+    display: inline-block;
+    font-size: rem(14px);
+    font-weight: 600;
+    line-height: rem(38px);
+    text-decoration: none;
+    border: 1px solid $c-black;
+    border-radius: rem(20px);
+    padding: rem(0 16px);
+  }
+
+  .btn-blue {
     color: $c-blue;
     border-color: $c-blue;
+
+    &:hover {
+      background-color: $c-blue;
+      color: $c-white;
+      border-color: $c-white;
+
+      svg {
+        fill: $c-white;
+      }
+    }
   }
   
+  .btn-gray {
+    color: $c-gray;
+    background-color: $c-white;
+    border-color: transparent;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: $c-gray;
+      color: $c-white;
+
+      svg {
+        fill: $c-white;
+      }
+    }
+  }

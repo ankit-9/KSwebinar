@@ -4,4 +4,8 @@
   text-decoration: none;
   line-height: 1.5;
   color: $c-gray;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

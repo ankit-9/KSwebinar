@@ -13,5 +13,9 @@
       margin-right: rem(5px);
       line-height: normal;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   

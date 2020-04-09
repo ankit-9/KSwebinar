@@ -102,6 +102,18 @@
   max-width: 100%;
   margin: rem(50px auto 0);
 
+  &__title {
+    float: left;
+  }
+
+  &__btn-see-all {
+    float: right;
+  }
+
+  &__bar {
+    clear: both;
+  }
+
   &__date {
     flex: 0 0 100%;
     max-width: 100%;
