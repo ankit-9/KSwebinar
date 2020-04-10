@@ -50,6 +50,10 @@
     .icon-plus {
       margin-right: 8px;
     }
+    
+    object {
+      pointer-events: none;
+    }
   }
 
   #mobile__menu_close_button {
