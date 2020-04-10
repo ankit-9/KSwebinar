@@ -1,0 +1,8 @@
+@import "../config/breakpoint.scss";
+@mixin responsive-set($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+}
