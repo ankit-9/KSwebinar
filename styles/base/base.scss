@@ -1,11 +1,11 @@
+// Import relevant config.
+@import '../config/font.scss';
+@import '../config/color.scss';
+
 // Import all utility classes here.
 @import '../utility/color/color.scss';
 @import '../utility/color/fill.scss';
 @import '../utility/button/button.scss';
-
-// Import relevant config.
-@import '../config/font.scss';
-@import '../config/color.scss';
 
 body {
   font-family: $font-primary;
