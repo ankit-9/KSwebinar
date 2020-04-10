@@ -34,6 +34,10 @@
     color: $c-blue;
     border-color: $c-blue;
 
+    svg {
+      fill: $c-blue;
+    }
+
     &:hover {
       background-color: $c-blue;
       color: $c-white;
@@ -50,6 +54,10 @@
     background-color: $c-white;
     border-color: transparent;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+
+    svg {
+      fill: $c-gray;
+    }
 
     &:hover {
       background-color: $c-gray;
