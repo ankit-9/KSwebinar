@@ -1,0 +1,28 @@
+.button__primary {
+  background: linear-gradient(305.1deg, $c-orange 0%, $c-vermilion 100%);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: transparent;
+  padding: 8px 16px;
+  color: white;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: min-content;
+}
+
+.button__inline_icon {
+  padding-right: 4px;
+}
+
+.button__text {
+  font-weight: bold;
+}
+
+.button__icon {
+  &:hover {
+    filter: opacity(75%);
+    cursor: pointer;
+  }
+}
