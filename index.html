@@ -7,347 +7,456 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" media="all" />
     <link type="text/css" rel="stylesheet" href="/src/styles.scss" media="all" />
-    <link type="text/css" rel="stylesheet" href="/styles/base/base.scss"/>
-    <link type="text/css" rel="stylesheet" href="/styles/components/header.scss"/>
-    <link type="text/css" rel="stylesheet" href="/styles/components/footer.scss"/>
+    <link type="text/css" rel="stylesheet" href="/styles/base/base.scss" />
+    <link type="text/css" rel="stylesheet" href="/styles/components/header.scss" />
+    <link type="text/css" rel="stylesheet" href="/styles/components/footer.scss" />
 </head>
 
 <body>
-
-  <nav class="navigation">
-		<div class="navigation__content">
-			<div class="brand">
-				<span class="icon__logo brand__logo" >
-          <object data="assets/logo/logo.svg" type="image/svg+xml"></object>
-        </span>
-				<a class="brand__name vermilion-text" href="#">KSwebinar</a>
-			</div>
-			<div class="main_menu">
-        <div id="create_menu" class="button__icon">
-          <div class="icon__plus">
-            <svg class="vermilion-fill" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.9286 5.89286H9.10714V1.07143C9.10714 0.479799 8.62734 0 8.03571 0H6.96429C6.37266 0 5.89286 0.479799 5.89286 1.07143V5.89286H1.07143C0.479799 5.89286 0 6.37266 0 6.96429V8.03571C0 8.62734 0.479799 9.10714 1.07143 9.10714H5.89286V13.9286C5.89286 14.5202 6.37266 15 6.96429 15H8.03571C8.62734 15 9.10714 14.5202 9.10714 13.9286V9.10714H13.9286C14.5202 9.10714 15 8.62734 15 8.03571V6.96429C15 6.37266 14.5202 5.89286 13.9286 5.89286Z">
-            </svg>
-          </div>
-          <div class="icon__down">
-            <svg class="vermilion-fill" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.142787 1.89011L3.55548 5.87265C3.61049 5.93681 3.67873 5.98831 3.75551 6.02362C3.8323 6.05892 3.91581 6.07721 4.00032 6.07721C4.08483 6.07721 4.16835 6.05892 4.24513 6.02362C4.32191 5.98831 4.39015 5.93681 4.44516 5.87265L7.85786 1.89011C8.18355 1.50997 7.91352 0.922794 7.41302 0.922794H0.586647C0.0861442 0.922794 -0.183883 1.50997 0.142787 1.89011Z"/>
-            </svg>
-          </div>
+    <nav class="navigation">
+        <div class="navigation__content">
+            <div class="brand">
+                <span class="icon__logo brand__logo">
+                    <object data="assets/logo/logo.svg" type="image/svg+xml"></object>
+                </span>
+                <a class="brand__name vermilion-text" href="#">KSwebinar</a>
+            </div>
+            <div class="main_menu">
+                <div id="create_menu" class="button__icon">
+                    <div class="icon__plus">
+                        <svg class="vermilion-fill" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9286 5.89286H9.10714V1.07143C9.10714 0.479799 8.62734 0 8.03571 0H6.96429C6.37266 0 5.89286 0.479799 5.89286 1.07143V5.89286H1.07143C0.479799 5.89286 0 6.37266 0 6.96429V8.03571C0 8.62734 0.479799 9.10714 1.07143 9.10714H5.89286V13.9286C5.89286 14.5202 6.37266 15 6.96429 15H8.03571C8.62734 15 9.10714 14.5202 9.10714 13.9286V9.10714H13.9286C14.5202 9.10714 15 8.62734 15 8.03571V6.96429C15 6.37266 14.5202 5.89286 13.9286 5.89286Z">
+                        </svg>
+                    </div>
+                    <div class="icon__down">
+                        <svg class="vermilion-fill" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.142787 1.89011L3.55548 5.87265C3.61049 5.93681 3.67873 5.98831 3.75551 6.02362C3.8323 6.05892 3.91581 6.07721 4.00032 6.07721C4.08483 6.07721 4.16835 6.05892 4.24513 6.02362C4.32191 5.98831 4.39015 5.93681 4.44516 5.87265L7.85786 1.89011C8.18355 1.50997 7.91352 0.922794 7.41302 0.922794H0.586647C0.0861442 0.922794 -0.183883 1.50997 0.142787 1.89011Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navigation__create_menu--desktop">
+                    <a class="create_menu__link" href="#">Create Topic</a>
+                    <a class="create_menu__link" href="#">Create Event</a>
+                </div>
+                <a class="main_menu__link active" href="#">Home</a>
+                <a class="main_menu__link" href="#">Topics</a>
+                <a class="main_menu__link" href="#">Events</a>
+                <a class="main_menu__link" href="#">Account</a>
+            </div>
+            <button class="user__logout button__primary">
+                <span class="icon__open button__inline_icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3.13744V11.8626C0 12.6659 0.334723 13.38 0.870281 13.9378C1.40584 14.4734 2.0976 14.7635 2.90094 14.7635H7.27465V12.956H2.90094C2.29843 12.956 1.82982 12.4651 1.82982 11.8626V3.13744C1.82982 2.53494 2.29843 2.06632 2.90094 2.06632H7.27465V0.236504H2.90094C2.0976 0.236504 1.40584 0.548912 0.870281 1.08447C0.334723 1.64234 0 2.3341 0 3.13744ZM4.7977 5.7706V9.25172C4.7977 9.65339 5.15474 9.98811 5.55641 9.98811H9.5954V12.7328C9.5954 12.9783 9.72929 13.1791 9.95244 13.2907C10.0417 13.313 10.131 13.313 10.1756 13.313C10.3318 13.313 10.4657 13.2684 10.5773 13.1568L15.8213 7.91283C16.0667 7.71199 16.0444 7.31032 15.8213 7.08718L10.5773 1.86549C10.2648 1.53077 9.5954 1.7316 9.5954 2.26716V5.03421H5.55641C5.15474 5.03421 4.7977 5.36893 4.7977 5.7706Z" fill="white" />
+                    </svg>
+                </span>
+                <span class="button__text">Logout</span>
+            </button>
+            <div class="mobile__menu">
+                <div id="create_menu--mobile" class="button__icon">
+                    <div class="icon__plus">
+                        <svg class="vermilion-fill" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9286 5.89286H9.10714V1.07143C9.10714 0.479799 8.62734 0 8.03571 0H6.96429C6.37266 0 5.89286 0.479799 5.89286 1.07143V5.89286H1.07143C0.479799 5.89286 0 6.37266 0 6.96429V8.03571C0 8.62734 0.479799 9.10714 1.07143 9.10714H5.89286V13.9286C5.89286 14.5202 6.37266 15 6.96429 15H8.03571C8.62734 15 9.10714 14.5202 9.10714 13.9286V9.10714H13.9286C14.5202 9.10714 15 8.62734 15 8.03571V6.96429C15 6.37266 14.5202 5.89286 13.9286 5.89286Z" />
+                        </svg>
+                    </div>
+                    <div class="icon__down">
+                        <svg class="vermilion-fill" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.142787 1.89011L3.55548 5.87265C3.61049 5.93681 3.67873 5.98831 3.75551 6.02362C3.8323 6.05892 3.91581 6.07721 4.00032 6.07721C4.08483 6.07721 4.16835 6.05892 4.24513 6.02362C4.32191 5.98831 4.39015 5.93681 4.44516 5.87265L7.85786 1.89011C8.18355 1.50997 7.91352 0.922794 7.41302 0.922794H0.586647C0.0861442 0.922794 -0.183883 1.50997 0.142787 1.89011Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navigation__create_menu--mobile">
+                    <a class="create_menu__link" href="#">Create Topic</a>
+                    <a class="create_menu__link" href="#">Create Event</a>
+                </div>
+                <div id="mobile__menu_button" class="icon__burger button__icon">
+                    <object data="assets/icons/utility/burger.svg" type="image/svg+xml"></object>
+                </div>
+                <div id="mobile__menu_close_button" class="icon__close button__icon">
+                    <object data="assets/icons/utility/close.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
         </div>
-        <div class="navigation__create_menu--desktop">
-          <a class="create_menu__link" href="#">Create Topic</a>
-          <a class="create_menu__link" href="#">Create Event</a>
+        <div class="navigation__content--mobile">
+            <div class="main_menu">
+                <a class="main_menu__link active" href="#">Home</a>
+                <a class="main_menu__link" href="#">Topics</a>
+                <a class="main_menu__link" href="#">Events</a>
+                <a class="main_menu__link" href="#">Account</a>
+            </div>
+            <button class="user__logout button__primary">
+                <span class="icon__open button__inline_icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3.13744V11.8626C0 12.6659 0.334723 13.38 0.870281 13.9378C1.40584 14.4734 2.0976 14.7635 2.90094 14.7635H7.27465V12.956H2.90094C2.29843 12.956 1.82982 12.4651 1.82982 11.8626V3.13744C1.82982 2.53494 2.29843 2.06632 2.90094 2.06632H7.27465V0.236504H2.90094C2.0976 0.236504 1.40584 0.548912 0.870281 1.08447C0.334723 1.64234 0 2.3341 0 3.13744ZM4.7977 5.7706V9.25172C4.7977 9.65339 5.15474 9.98811 5.55641 9.98811H9.5954V12.7328C9.5954 12.9783 9.72929 13.1791 9.95244 13.2907C10.0417 13.313 10.131 13.313 10.1756 13.313C10.3318 13.313 10.4657 13.2684 10.5773 13.1568L15.8213 7.91283C16.0667 7.71199 16.0444 7.31032 15.8213 7.08718L10.5773 1.86549C10.2648 1.53077 9.5954 1.7316 9.5954 2.26716V5.03421H5.55641C5.15474 5.03421 4.7977 5.36893 4.7977 5.7706Z" fill="white" />
+                    </svg>
+                </span>
+                <span class="button__text">Logout</span>
+            </button>
         </div>
-				<a class="main_menu__link active" href="#">Home</a>
-				<a class="main_menu__link" href="#">Topics</a>
-				<a class="main_menu__link" href="#">Events</a>
-				<a class="main_menu__link" href="#">Account</a>
-			</div>
-
-			<button class="user__logout button__primary">
-        <span class="icon__open button__inline_icon">
-            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 3.13744V11.8626C0 12.6659 0.334723 13.38 0.870281 13.9378C1.40584 14.4734 2.0976 14.7635 2.90094 14.7635H7.27465V12.956H2.90094C2.29843 12.956 1.82982 12.4651 1.82982 11.8626V3.13744C1.82982 2.53494 2.29843 2.06632 2.90094 2.06632H7.27465V0.236504H2.90094C2.0976 0.236504 1.40584 0.548912 0.870281 1.08447C0.334723 1.64234 0 2.3341 0 3.13744ZM4.7977 5.7706V9.25172C4.7977 9.65339 5.15474 9.98811 5.55641 9.98811H9.5954V12.7328C9.5954 12.9783 9.72929 13.1791 9.95244 13.2907C10.0417 13.313 10.131 13.313 10.1756 13.313C10.3318 13.313 10.4657 13.2684 10.5773 13.1568L15.8213 7.91283C16.0667 7.71199 16.0444 7.31032 15.8213 7.08718L10.5773 1.86549C10.2648 1.53077 9.5954 1.7316 9.5954 2.26716V5.03421H5.55641C5.15474 5.03421 4.7977 5.36893 4.7977 5.7706Z" fill="white"/>
-            </svg>
-        </span>
-        <span class="button__text">Logout</span>
-      </button>
-
-      <div class="mobile__menu">
-        <div id="create_menu--mobile" class="button__icon">
-          <div class="icon__plus">
-            <svg class="vermilion-fill" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.9286 5.89286H9.10714V1.07143C9.10714 0.479799 8.62734 0 8.03571 0H6.96429C6.37266 0 5.89286 0.479799 5.89286 1.07143V5.89286H1.07143C0.479799 5.89286 0 6.37266 0 6.96429V8.03571C0 8.62734 0.479799 9.10714 1.07143 9.10714H5.89286V13.9286C5.89286 14.5202 6.37266 15 6.96429 15H8.03571C8.62734 15 9.10714 14.5202 9.10714 13.9286V9.10714H13.9286C14.5202 9.10714 15 8.62734 15 8.03571V6.96429C15 6.37266 14.5202 5.89286 13.9286 5.89286Z"/>      
-            </svg>
-          </div>
-          <div class="icon__down">
-            <svg class="vermilion-fill" width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.142787 1.89011L3.55548 5.87265C3.61049 5.93681 3.67873 5.98831 3.75551 6.02362C3.8323 6.05892 3.91581 6.07721 4.00032 6.07721C4.08483 6.07721 4.16835 6.05892 4.24513 6.02362C4.32191 5.98831 4.39015 5.93681 4.44516 5.87265L7.85786 1.89011C8.18355 1.50997 7.91352 0.922794 7.41302 0.922794H0.586647C0.0861442 0.922794 -0.183883 1.50997 0.142787 1.89011Z"/>
-            </svg>
-          </div>
+    </nav>
+    <main>
+        <div class=" ks-upcoming-block">
+            <h2 class="ks-upcoming-block__title title">Upcoming</h2>
+            <div class="ks-upcoming-block__content ks-tile__items">
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link orange-text">
+                                <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link blue-text">
+                                <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link aqua-text">
+                                <svg class="aqua-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link orange-text">
+                                <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link blue-text">
+                                <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
+                                    02
+                                </p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link aqua-text">
+                                <svg class="aqua-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+                <div class="ks-tile__item">
+                    <div class="ks-tile__top">
+                        <div class="ks-upcoming-block__date date">
+                            <div class="ks-upcoming-block__date-left">
+                                <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">02</p>
+                            </div>
+                            <div class="ks-upcoming-block__date-right">
+                                <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
+                                <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ks-tile__middle">
+                        <div class="ks-upcoming-block__link">
+                            <a href="#" class="icon-link orange-text">
+                                <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                                </svg>
+                                Webinar
+                            </a>
+                        </div>
+                        <div class="ks-upcoming-block__discription">
+                            <p class="default-text">
+                                Automated Visual regression testing using Applitools browser
+                                extension
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ks-tile__bottom">
+                        <a href="#" class="gray-link">+3 topics</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="navigation__create_menu--mobile">
-          <a class="create_menu__link" href="#">Create Topic</a>
-          <a class="create_menu__link" href="#">Create Event</a>
+        <!-- RECENT BLOCK START -->
+        <div class="ks-recent-block">
+            <h2 class="ks-recent-block__title title">Recent</h2>
+            <a href="#" class="ks-recent-block__btn-see-all btn-default btn-gray"> See All</a>
+            <div class="ks-recent-block__bar ks-bar-tile">
+                <div class="ks-bar-tile-left">
+                    <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
+                </div>
+                <div class="ks-bar-tile-right">
+                    <div class="ks-recent-block__date date">
+                        <p class="ks-recent-block__date-year date-year">Jan 2020</p>
+                    </div>
+                    <div class="ks-recent-block__text">
+                        <p class="default-text">
+                            Automated Visual regression testing using Applitools browser
+                            extension
+                        </p>
+                    </div>
+                    <div class="ks-recent-block__link">
+                        <a href="#" class="icon-link gray-text">
+                            <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                            </svg>
+                            Webinar
+                        </a>
+                    </div>
+                    <a href="#" class="icon-btn btn-blue">
+                        <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
+                        </svg>
+                        Webinar
+                    </a>
+                </div>
+            </div>
+            <div class="ks-bar-tile">
+                <div class="ks-bar-tile-left">
+                    <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
+                </div>
+                <div class="ks-bar-tile-right">
+                    <div class="ks-recent-block__date date">
+                        <p class="ks-recent-block__date-year date-year">Jan 2020</p>
+                    </div>
+                    <div class="ks-recent-block__text">
+                        <p class="default-text">
+                            Automated Visual regression testing using Applitools browser
+                            extension
+                        </p>
+                    </div>
+                    <div class="ks-recent-block__link">
+                        <a href="#" class="icon-link gray-text">
+                            <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                            </svg>
+                            Webinar
+                        </a>
+                    </div>
+                    <a href="#" class="icon-btn btn-blue">
+                        <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
+                        </svg>
+                        Webinar
+                    </a>
+                </div>
+            </div>
+            <div class="ks-bar-tile">
+                <div class="ks-bar-tile-left">
+                    <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
+                </div>
+                <div class="ks-bar-tile-right">
+                    <div class="ks-recent-block__date date">
+                        <p class="ks-recent-block__date-year date-year">Jan 2020</p>
+                    </div>
+                    <div class="ks-recent-block__text">
+                        <p class="default-text">
+                            Automated Visual regression testing using Applitools browser
+                            extension Automated Visual regression testing using Applitools browser
+                            extension
+                        </p>
+                        <p class="default-text">
+                            Automated Visual regression testing using Applitools browser
+                            extension
+                        </p>
+                    </div>
+                    <div class="ks-recent-block__link">
+                        <a href="#" class="icon-link gray-text">
+                            <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
+                            </svg>
+                            Webinar
+                        </a>
+                    </div>
+                    <a href="#" class="icon-btn btn-blue">
+                        <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
+                        </svg>
+                        Webinar
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div id="mobile__menu_button" class="icon__burger button__icon">
-          <object data="assets/icons/utility/burger.svg" type="image/svg+xml"></object>
         </div>
-        <div id="mobile__menu_close_button" class="icon__close button__icon">
-          <object data="assets/icons/utility/close.svg" type="image/svg+xml"></object>
+        <!-- TOPICS PAGE START -->
+    <div class="ks-topic-block">
+      <div class="ks-topic-block__header">
+        <div class="search-input-block">
+          <input type="text" class="search-input" placeholder="Search">
         </div>
-      </div>
-		</div>
-		<div class="navigation__content--mobile">
-			<div class="main_menu">
-				<a class="main_menu__link active" href="#">Home</a>
-				<a class="main_menu__link" href="#">Topics</a>
-				<a class="main_menu__link" href="#">Events</a>
-				<a class="main_menu__link" href="#">Account</a>
-			</div>
-      <button class="user__logout button__primary">
-        <span class="icon__open button__inline_icon">
-          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 3.13744V11.8626C0 12.6659 0.334723 13.38 0.870281 13.9378C1.40584 14.4734 2.0976 14.7635 2.90094 14.7635H7.27465V12.956H2.90094C2.29843 12.956 1.82982 12.4651 1.82982 11.8626V3.13744C1.82982 2.53494 2.29843 2.06632 2.90094 2.06632H7.27465V0.236504H2.90094C2.0976 0.236504 1.40584 0.548912 0.870281 1.08447C0.334723 1.64234 0 2.3341 0 3.13744ZM4.7977 5.7706V9.25172C4.7977 9.65339 5.15474 9.98811 5.55641 9.98811H9.5954V12.7328C9.5954 12.9783 9.72929 13.1791 9.95244 13.2907C10.0417 13.313 10.131 13.313 10.1756 13.313C10.3318 13.313 10.4657 13.2684 10.5773 13.1568L15.8213 7.91283C16.0667 7.71199 16.0444 7.31032 15.8213 7.08718L10.5773 1.86549C10.2648 1.53077 9.5954 1.7316 9.5954 2.26716V5.03421H5.55641C5.15474 5.03421 4.7977 5.36893 4.7977 5.7706Z" fill="white"/>
+        <a href="#" class="ks-recent-block__btn-see-all btn-default btn-gray">
+          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66667 8.5H7.33333V7.16667H4.66667V8.5ZM0 0.5V1.83333H12V0.5H0ZM2 5.16667H10V3.83333H2V5.16667Z" fill="inherit"/>
           </svg>
-        </span>
-        <span class="button__text">Logout</span>
-      </button>
-		</div>
-	</nav>
-  <main>
-    <div class=" ks-upcoming-block">
-        <h2 class="ks-upcoming-block__title title">Upcoming</h2>
-        <div class="ks-upcoming-block__content ks-tile__items">
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link orange-text">
-                            <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link blue-text">
-                            <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link aqua-text">
-                            <svg class="aqua-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link orange-text">
-                            <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link blue-text">
-                            <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">
-                                02
-                            </p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link aqua-text">
-                            <svg class="aqua-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-            <div class="ks-tile__item">
-                <div class="ks-tile__top">
-                    <div class="ks-upcoming-block__date date">
-                        <div class="ks-upcoming-block__date-left">
-                            <p class="ks-upcoming-block__date-two-digit date-two-digit orange-text">02</p>
-                        </div>
-                        <div class="ks-upcoming-block__date-right">
-                            <p class="ks-upcoming-block__date-year date-year">Jan 2020</p>
-                            <p class="ks-upcoming-block__date-time date-time">4:20 pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ks-tile__middle">
-                    <div class="ks-upcoming-block__link">
-                        <a href="#" class="icon-link orange-text">
-                            <svg class="orange-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                            </svg>
-                            Webinar
-                        </a>
-                    </div>
-                    <div class="ks-upcoming-block__discription">
-                        <p class="default-text">
-                            Automated Visual regression testing using Applitools browser
-                            extension
-                        </p>
-                    </div>
-                </div>
-                <div class="ks-tile__bottom">
-                    <a href="#" class="gray-link">+3 topics</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- RECENT BLOCK START -->
-    <div class="ks-recent-block">
-        <h2 class="ks-recent-block__title title">Recent</h2>
-        <a href="#" class="ks-recent-block__btn-see-all btn-default btn-gray"> See All</a>
+          Filters
+        </a>
+          
+      </div>
+      <div class="msg-tile msg-success">
+        <p class="msg-text">99 Found!</p>
+      </div>
+        
         <div class="ks-recent-block__bar ks-bar-tile">
           <div class="ks-bar-tile-left">
-            <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
+            <p class="ks-recent-block__date-two-digit date-two-digit blue-text">02</p>
           </div>
           <div class="ks-bar-tile-right">
             <div class="ks-recent-block__date date">
@@ -360,173 +469,66 @@
                 </p>
             </div>
             <div class="ks-recent-block__link">
-                <a href="#" class="icon-link gray-text">
-                    <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#" class="icon-link blue-text">
+                    <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
                     </svg>
                     Webinar
                 </a>
             </div>
-            <a href="#" class="icon-btn btn-blue">
-                <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
-                </svg>
-                Webinar
-            </a>
           </div>
         </div>
-        <div class="ks-bar-tile">
-          <div class="ks-bar-tile-left">
-            <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
-          </div>
-          <div class="ks-bar-tile-right">
-            <div class="ks-recent-block__date date">
-                <p class="ks-recent-block__date-year date-year">Jan 2020</p>
-            </div>
-            <div class="ks-recent-block__text">
-                <p class="default-text">
-                    Automated Visual regression testing using Applitools browser
-                    extension
-                </p>
-            </div>
-            <div class="ks-recent-block__link">
-                <a href="#" class="icon-link gray-text">
-                    <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                    </svg>
-                    Webinar
-                </a>
-            </div>
-            <a href="#" class="icon-btn btn-blue">
-                <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
-                </svg>
-                Webinar
-            </a>
-          </div>
-        </div>
-        <div class="ks-bar-tile">
-          <div class="ks-bar-tile-left">
-            <p class="ks-recent-block__date-two-digit date-two-digit">02</p>
-          </div>
-          <div class="ks-bar-tile-right">
-            <div class="ks-recent-block__date date">
-                <p class="ks-recent-block__date-year date-year">Jan 2020</p>
-            </div>
-            <div class="ks-recent-block__text">
-                <p class="default-text">
-                    Automated Visual regression testing using Applitools browser
-                    extension Automated Visual regression testing using Applitools browser
-                    extension
-                </p>
-                <p class="default-text">
-                    Automated Visual regression testing using Applitools browser
-                    extension
-                </p>
-            </div>
-            <div class="ks-recent-block__link">
-                <a href="#" class="icon-link gray-text">
-                    <svg class="gray-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                    </svg>
-                    Webinar
-                </a>
-            </div>
-            <a href="#" class="icon-btn btn-blue">
-                <svg class="blue-fill" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.6 1.99999C9.6 1.33819 9.0618 0.799988 8.4 0.799988H1.2C0.5382 0.799988 0 1.33819 0 1.99999V7.99999C0 8.66179 0.5382 9.19999 1.2 9.19999H8.4C9.0618 9.19999 9.6 8.66179 9.6 7.99999V6.00019L12 7.99999V1.99999L9.6 3.99979V1.99999Z" fill="inherit" />
-                </svg>
-                Webinar
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- TOPICS PAGE START -->
-    <div class="ks-recent-block">
-      <h2 class="ks-recent-block__title title">Recent</h2>
-      <a href="#" class="ks-recent-block__btn-see-all btn-default btn-gray">
-        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.66667 8.5H7.33333V7.16667H4.66667V8.5ZM0 0.5V1.83333H12V0.5H0ZM2 5.16667H10V3.83333H2V5.16667Z" fill="inherit"/>
-        </svg>
-
-        Filters
-      </a>
-      <div class="ks-recent-block__bar ks-bar-tile">
-        <div class="ks-bar-tile-left">
-          <p class="ks-recent-block__date-two-digit date-two-digit blue-text">02</p>
+        
+    </main>
+    <footer>
+        <div class="footer__top">
+            <div class="footer__first">
+                <div class="footer__heading">
+                    Quick Links
+                </div>
+                <div class="footer__menu">
+                    <a href="#">Careers</a>
+                    <a href="#">Plugin Store</a>
+                    <a href="#">Contrib Tracker</a>
+                </div>
+            </div>
+            <div class="footer__second">
+                <div class="footer__heading">
+                    Blog
+                </div>
+                <div class="footer__menu">
+                    <a href="#">Articles</a>
+                    <a href="#">Team Blog</a>
+                    <a href="#">Case Studies</a>
+                </div>
+            </div>
+            <div class="footer__third">
+                <div class="footer__heading">
+                    Social Sharing
+                </div>
+                <div class="footer__social">
+                    <object data="assets/icons/social/facebook.svg" type="image/svg+xml"></object>
+                    <object data="assets/icons/social/twitter.svg" type="image/svg+xml"></object>
+                    <object data="assets/icons/social/linkedin.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
+            <div class="footer__brand">
+                <div class="brand__logo--full">
+                    <a href="#">
+                        <object data="assets/logo/logo__full.svg" type="image/svg+xml"></object>
+                    </a>
+                </div>
+                <div class="powered__by">
+                    Powered by Drupal
+                </div>
+            </div>
         </div>
-        <div class="ks-bar-tile-right">
-          <div class="ks-recent-block__date date">
-              <p class="ks-recent-block__date-year date-year">Jan 2020</p>
-          </div>
-          <div class="ks-recent-block__text">
-              <p class="default-text">
-                  Automated Visual regression testing using Applitools browser
-                  extension
-              </p>
-          </div>
-          <div class="ks-recent-block__link">
-              <a href="#" class="icon-link blue-text">
-                  <svg class="blue-fill" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14.3888 0.5C14.8384 0.5 15.2194 0.656495 15.5316 0.969484C15.8439 1.28247 16 1.6518 16 2.07746V11.6925C16 12.1432 15.8439 12.525 15.5316 12.838C15.2194 13.151 14.8384 13.3075 14.3888 13.3075H3.18501L0 16.5V2.07746C0 1.6518 0.156128 1.28247 0.468384 0.969484C0.78064 0.656495 1.16159 0.5 1.61124 0.5H14.3888ZM12.7775 10.115V3.69249L9.59251 6.24648V3.69249H3.18501V10.115H9.59251V7.52347L12.7775 10.115Z" fill="inherit" />
-                  </svg>
-                  Webinar
-              </a>
-          </div>
+        <div class="footer__bottom">
+            © 2019 Axelerant. All Rights Reserved.
         </div>
-      </div>
-    </div>
-
-  </main>
-  <footer>
-    <div class="footer__top">
-      <div class="footer__first">
-        <div class="footer__heading">
-          Quick Links
-        </div>
-        <div class="footer__menu">
-          <a href="#">Careers</a>
-          <a href="#">Plugin Store</a>
-          <a href="#">Contrib Tracker</a>
-        </div>
-      </div>
-      <div class="footer__second">
-        <div class="footer__heading">
-          Blog
-        </div>
-        <div class="footer__menu">
-          <a href="#">Articles</a>
-          <a href="#">Team Blog</a>
-          <a href="#">Case Studies</a>
-        </div>
-      </div>
-      <div class="footer__third">
-        <div class="footer__heading">
-          Social Sharing
-        </div>
-        <div class="footer__social">
-          <object data="assets/icons/social/facebook.svg" type="image/svg+xml"></object>
-          <object data="assets/icons/social/twitter.svg" type="image/svg+xml"></object>
-          <object data="assets/icons/social/linkedin.svg" type="image/svg+xml"></object>
-        </div>
-      </div>
-      <div class="footer__brand">
-        <div class="brand__logo--full">
-				  <a href="#">
-            <object data="assets/logo/logo__full.svg" type="image/svg+xml"></object>
-          </a>
-			  </div>
-        <div class="powered__by">
-          Powered by Drupal
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      © 2019 Axelerant. All Rights Reserved.
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="js/components/header.js"></script>
+
 </html>

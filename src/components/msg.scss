@@ -1,0 +1,24 @@
+.msg-tile {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  height: rem(95px);
+  padding: rem(16px);
+  margin: rem(10px auto);
+  border: 1px solid transparent;
+  clear: both;
+
+  &.msg-success {
+    background-color: $c-light-blue;
+    border-color: rgba(51,93,176, .15);
+
+  }
+}
+
+.msg-text {
+  margin: 0;
+  font-size: rem(20px);
+  font-weight: 600;
+  line-height: 1.5;
+  color: $c-semi-black;
+}
